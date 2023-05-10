@@ -1,0 +1,67 @@
+body{
+    background-color: #F5E8C7;
+}
+
+/* This is the start of the navbar*/
+
+.navbar {
+    overflow: hidden; /* overflow hidden does so the text don't get shown if theres more text that there is space */
+    background-color: #333;
+}
+  
+.navbar a /* A is ment for the anchors under the class .navbar*/ {
+    float: left; /* Does so the text is on the left side of the navbar */
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; /* Does so the line under the hyperlinks is not shown */
+}
+  
+.dropdown {
+    float: left; /* Does so the text is on the left side of the navbar */
+    overflow: hidden; /* overflow hidden does so the text don't get shown if theres more text that there is space */
+}
+  
+.dropdown .dropbtn /* Two diffrent divs because it effects them both */ {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit; /* Inherit means that it takes the element from the parent for example color */
+    font-family: inherit; /* Inherit means that it takes the element from the parent for example color */
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn /* It affect the anchors under the navbar div when it's being hovered upon. It also covers the dropdown and the dropbtn when the dropdown div is being hovered on */{
+    background-color: #AC7088;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute; /* Position: absolute; means that it can be placed in a exact location. Even on top of other text ec. */
+    background-color: #f9f9f9;
+    min-width: 160px; /* The minimum width */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Adds a shadow effect under the element */
+    z-index: 1; /* Indicates the stack order of an element */
+}
+  
+.dropdown-content a /* For the anchors under the div dropbar-content */{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+.dropdown-content a:hover /* Affect's the anchors upon being hovered at */ {
+    background-color: #ddd;
+}
+  
+.dropdown:hover .dropdown-content /* Both div's because both of the divitions is being affected the same */{
+    display: block;
+}
+
+/* This is the end of the navbar*/
